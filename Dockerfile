@@ -1,6 +1,7 @@
 #THIS IS DOCKER FILE...!!!!!!!
 FROM nginx:latest 
-MAINTAINER mavrick202@gmail.com 
-COPY index.html /usr/share/nginx/html/
-COPY scorekeeper.js /usr/share/nginx/html/
-COPY style.css /usr/share/nginx/html/
+MAINTAINER gopinadh.choppavarapu05@gmail.com
+RUN mkdir -p /usr/share/nginx/html/app
+COPY index.html /usr/share/nginx/html/app/
+COPY scorekeeper.js /usr/share/nginx/html/app/
+COPY style.css /usr/share/nginx/html/app/
